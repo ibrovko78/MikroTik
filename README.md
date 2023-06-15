@@ -25,4 +25,4 @@
    * Скрипт мониторит счетчики пользователей по download и как только download становиться больше установленного значения активная сессия завершается, profile с лимитом трафика по сути израсходованным удаляется .
 7. **`remove_all_authorized_users`** - Скрипт завершения всех активных сессии пользователей HotSpot MikroTik
 8. **`remove_conflict_dhcp_leases`** - Скрипт удаления конфликтных leases в DHCP MikroTik
-9. 
+9. **`remove_hosts_anotherip`** - Скрипт удаления ip адресов из Hosts в HotSpot  MikroTik не входящих в pool DHCP
