@@ -11,7 +11,7 @@
 :local sub1 ([/system identity get name])
 :local sub2 ([/system clock get time])
 :local sub3 ([/system clock get date])
-:local ADMINMAIL1 "i.brovko@fishdv.ru"
+:local ADMINMAIL1 "my@mail.ru"
 :if ([/ping $HOST interface=$INT  count=$PINGCOUNT] = 0) do={
 :log error "HOST $HOST is not responding to ping request..."
 /tool e-mail send to=$ADMINMAIL1 from=S-MikroTik_CHR subject="$HOST is not responding to ping request @ $sub3 $sub2 $sub1" body="interface = $INT, ping to 8.8.8.8 = $GOHOST, \n ping to 212.176.87.113 = $OHOST, ping to 212.176.87.114 = $ECHOST, ping to 195.151.249.213 = $EBHOST, ping to 46.111.120.115 = $EAHOST, ping to 46.111.120.113 = $EHOST, \n ping to 172.23.143.1 = $GHOST" start-tls=yes
